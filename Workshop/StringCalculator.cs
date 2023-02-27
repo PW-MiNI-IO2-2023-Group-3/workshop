@@ -23,12 +23,7 @@ namespace Workshop
 
             char separator;
             string[] numbers;
-            if (str.Substring(0,2) == "//")
-            {
-                separator = str[2];
-                numbers = str.Substring(4).Split(',', '\n', separator);
-            }
-            else numbers = str.Split(',', '\n');
+            
             foreach (var number in numbers)
             {
                 int num = int.Parse(number);
